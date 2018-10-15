@@ -47,14 +47,14 @@ public class MainActivity extends AppCompatActivity {
 						editor.putBoolean("power", false);
 						editor.apply();
 						powerOff();
-						Toast.makeText(MainActivity.this, "Power off...", Toast.LENGTH_SHORT).show();
+						Toast.makeText(MainActivity.this, "Power off..", Toast.LENGTH_SHORT).show();
 						Log.d("MainActivity", "powerOff");
 					}else{
 						SharedPreferences.Editor editor = getSharedPreferences("data", MODE_PRIVATE).edit();
 						editor.putBoolean("power", true);
 						editor.apply();
 						powerOn();
-						Toast.makeText(MainActivity.this, "Power on...", Toast.LENGTH_SHORT).show();
+						Toast.makeText(MainActivity.this, "Power on..", Toast.LENGTH_SHORT).show();
 						Log.d("MainActivity", "powerOn");
 					}
             }
